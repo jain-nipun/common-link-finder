@@ -12,12 +12,6 @@ import colorama
 # initialize the set of links (unique links)
 internal_urls = set()
 #external_urls = set()
-urls = set()
-def get_anchor(url):
-    soup = BeautifulSoup(requests.get(url).content, "html.parser")
-    anchors = []
-    for a_tag in soup.find_all("a"):
-        anchors.append(a_tag.text)
 
 def is_valid(url):
     """
