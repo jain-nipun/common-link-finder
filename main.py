@@ -27,7 +27,7 @@ def get_all_website_links(url):
     # all URLs of `url`
     urls = set()
     # domain name of the URL without the protocol
-    domain_name = urlparse(url).netloc
+    #domain_name = urlparse(url).netloc
     soup = BeautifulSoup(requests.get(url).content, "html.parser")
 
     dic = {}
