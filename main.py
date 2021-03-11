@@ -81,6 +81,8 @@ def crawl(url, max_urls=15):
 
 if __name__ == "__main__":
     crawl("https://www.thepythoncode.com")
+    with io.open(r"C:\Users\Dell\Desktop\Output.txt", 'w', encoding = 'utf-8') as file:
+        file.write(str(internal_urls))
     #print("[+] Total External links:", len(external_urls))
-    print("[+] Total Internal links:", internal_urls)
+    #print("[+] Total Internal links:", internal_urls)
     #print("[+] Total:", len(external_urls) + len(internal_urls))
