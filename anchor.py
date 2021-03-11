@@ -37,4 +37,6 @@ def get_anchor(url):
 
 if __name__ == "__main__":
     tag = get_anchor("https://www.thepythoncode.com")
-    print(tag)
+    file = open(r"C:\Users\Dell\Desktop\Output.txt", 'w')
+    file.write(str(tag))
+    file.close()
