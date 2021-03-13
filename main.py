@@ -16,10 +16,6 @@ def get_all_website_links(url):
     #Returns all URLs that is found on `url` in which it belongs to the same website
     soup = BeautifulSoup(requests.get(url).content, "html.parser")
 
-    #config = ConfigParser()
-    #config.read(os.path.join(os.path.dirname(__file__), '../Config', 'config.ini'))
-    #soup = requests.get(config['default']['root_url']).content
-
     #initialize dictionary to store urls as key and anchor_text and occurency as nested key value pair
     result = {}
     for a_tag in soup.find_all("a"):
@@ -49,12 +45,6 @@ def get_all_website_links(url):
             result[href][anchor_text] = 1
 
     return result
-
-#URLS = ['http://www.foxnews.com/',
-#   'http://www.cnn.com/',
-#   'http://europe.wsj.com/',
-#   'http://www.bbc.co.uk/',
-#   'http://some-made-up-domain.com/']
 
 #to write user-friendly command-line interfaces and parses the defined arguments from the sys
 parser = argparse.ArgumentParser()
