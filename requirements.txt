@@ -1,0 +1,29 @@
+# Library dependencies for the python code.  You need to install these with
+# `pip install -r requirements.txt` before you can run this.
+
+#### ESSENTIAL LIBRARIES FOR MAIN FUNCTIONALITY ####
+
+# Allows you to send HTTP/1.1 requests
+requests 
+Installation:  python -m pip install requests
+
+# Standard interface to break URL strings up in components (addressing scheme, network location, path etc.)
+# And to combine the components back into a URL string
+urllib.parse
+
+# Pulls data out of HTML and XML files and provides idiomatic ways of navigating, searching, and modifying the parse tree.
+BeautifulSoup
+Installation: pyhton -m pip install bs4
+
+# Argument parsing in for data cleaning scripts
+argparse
+
+# Provides Python's main facilities for dealing with various types of I/O.
+io
+
+# Provides information about constants, functions and methods of the Python interpreter.
+sys
+
+# This method chops iterables into a number of chunks which it submits to the pool as separate tasks.
+concurrent.futures
+
